@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <img src="./img/he4rt_logo.png" alt="">
+      </div>
+      <div class="social">
+        <a href="https://github.com/olivmarcos"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/_olivmarcos/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+      </div>
+      </header>
     <div>
       <div id="container">
-        <div class="logo">
-          He4rt Challenges
+        <div class="secoes">
+          <section class="infos size">
+            <div class="text">
+              <h1>Calculadora de Freelas</h1>
+              <p>Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado.</p>
+              <p>Um projeto proposto pelo grupo <a href="https://heartdevs.com/">He4rt Developers</a>.</p>
+            </div>
+            <div class="btn">
+              <button>Mais</button>
+            </div>
+          </section>
+
+          <section class="calc size">
+            <for class="form">
+              <label for="">Tempo Diário</label>
+              <input id="diario" type="text">
+  
+              <label for="">Dias Efetivos</label>
+              <input id="efetivos" type="text">
+  
+              <label for="">Dias de Férias</label>
+              <input id="ferias" type="text">
+  
+              <label for="">Valor Total do Projeto</label>
+              <input id = "valor" type="text">
+              <div class="btn">
+                <button type="submit" onclick="calcularValor()">Calcular</button>
+              </div>
+
+              <div id="resultado">
+                <h1></h1>
+              </div>
+            </for>
+          </section>
         </div>
-        <main class="calc">
-          <for class="form">
-            <label for="">Tempo Diário</label>
-            <input id="diario" type="text">
 
-            <label for="">Dias Efetivos</label>
-            <input id="efetivos" type="text">
-
-            <label for="">Dias de Férias</label>
-            <input id="ferias" type="text">
-
-            <label for="">Valor Total do Projeto</label>
-            <input id = "valor" type="text">
-
-            <button class="btn" type="submit" onclick="calcularValor()">Calcular</button>
-          </for>
-        </main>
       </div>
     </div>
     <script src="./main.js"></script>
