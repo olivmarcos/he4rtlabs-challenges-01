@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Sailec-Bold,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Sailec-Bold, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -15,13 +15,13 @@ header {
     height: 60vh;
 }
 
- .social {
-     color: #a64dff;
-     display: flex;
-     align-items: center;
-     font-size: 2rem;
-     width: 50%;
-     justify-content: center;
+.social {
+    color: #a64dff;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 50%;
+    justify-content: center;
 }
 
 .social a {
@@ -39,10 +39,7 @@ header {
 .logo img {
     height: 150px;
 }
-.secoes {
-    display: flex;
-    justify-content: center;
-}
+
 .secoes {
     display: flex;
     justify-content: space-around;
@@ -53,26 +50,24 @@ header {
     display: flex;
     justify-content: center;
 }
-.form, .infos {
+
+.form,
+.infos {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 15rem;
 }
 
-.infos button {
-    margin-top: 7.5rem;
-}
-
 .form input {
     margin: .5rem 0 1rem 0;
     border: none;
-    border-bottom: 1px solid  #a64dff;
+    border-bottom: 1px solid #a64dff;
     outline: none;
     padding: .5rem;
 }
 
-button  {
+button {
     width: 10rem;
     height: 3rem;
     border-radius: 2px;
@@ -80,18 +75,19 @@ button  {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    outline: n;
+    outline: none;
     box-shadow: 0 8px 16px rgba(135, 67, 204, 0.24);
 }
 
-
 .size {
-    width: 50%;;
+    width: 50%;
+    ;
 }
 
 .text {
     text-align: center;
     font-size: 1.2rem;
+    margin-bottom: 11.9rem;
 }
 
 .text h1 {
@@ -118,80 +114,92 @@ a {
     margin: 0 1rem 1rem 1rem;
     padding: 1rem;
     text-align: center;
-    -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.75);
 }
 
 .variavel h1 {
     margin-bottom: 1rem;
 }
 
+
 /*RESPONSIVIDADE*/
+
 
 /*==========  Non-Mobile First Method  ==========*/
 
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 956px) {
-        .infos button {
-            margin-top: 6rem;
-        }
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 960px) {
+    .text {
+        margin-bottom: 10rem;
     }
+}
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 786px) {
-        .infos button {
-            margin-top: 4.5rem;
-        }
 
-        #variaveis {
-            flex-direction: column;
-            align-items: center;
-        }
+/* Small Devices, Tablets */
 
-        .variavel {
-            width: 70%;
-            margin-bottom: 2rem;
-        }
+@media only screen and (max-width: 786px) {
+    .text {
+        margin-bottom: 10rem;
     }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 680px) {
-        header {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .secoes {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 120px;
-        }
-        
-        .social {
-            font-size: 1.5rem;
-        }
-
-        #container {
-            height: 80vh;
-        }
-        .infos button {
-            margin: 2rem 0 2rem 0;
-        }
+    #variaveis {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
     }
-
-    /* Custom, iPhone Retina */ 
-    @media only screen and (max-width : 420px) {
-        #container {
-            height: 110vh;
-        }
+    .variavel {
+        width: 70%;
+        margin-bottom: 2rem;
     }
+}
 
-    /*ERRO*/
 
-    .warn {
-        box-shadow: 0 0 10px #F71E01;
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 730px) {
+    .text {
+        margin-bottom: 8rem;
     }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 120px;
+    }
+    .social {
+        font-size: 1.5rem;
+    }
+    #container {
+        height: 80vh;
+    }
+    .text {
+        margin-bottom: 2rem;
+    }
+    .infos button {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 420px) {
+    #container {
+        height: 110vh;
+    }
+}
+
+
+/*ERRO*/
+
+.warn {
+    box-shadow: 0 0 10px #F71E01;
+}

@@ -24,28 +24,28 @@ function calcularValor() {
 function validarForm(horasDiarias, diasEfetivos, diasFerias, valorProjeto) {
     let elementos = pegarElementos();
 
-    if (isNaN(horasDiarias)) {
+    if (isNaN(horasDiarias) || (horasDiarias == '')) {
         elementos[0].classList.add("warn");
         setTimeout(() => {
             elementos[0].classList.remove("warn");
         }, 500);
     }
 
-    if (isNaN(diasEfetivos)) {
+    if (isNaN(diasEfetivos) || (diasEfetivos == '')) {
         elementos[1].classList.add("warn");
         setTimeout(() => {
             elementos[1].classList.remove("warn");
         }, 500);
     }
 
-    if (isNaN(diasFerias)) {
+    if (isNaN(diasFerias) || (diasFerias == '')) {
         elementos[2].classList.add("warn");
         setTimeout(() => {
             elementos[2].classList.remove("warn");
         }, 500);
     }
 
-    if (isNaN(valorProjeto)) {
+    if (isNaN(valorProjeto) || (valorProjeto == '')) {
         elementos[3].classList.add("warn");
         setTimeout(() => {
             elementos[3].classList.remove("warn");
